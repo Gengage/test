@@ -29,4 +29,6 @@ const fixScrollbar = document.querySelector('.wrap')
 function fixScroll(){
     document.body.style.overflow = "hidden"
   }
-  fixScrollbar.addEventListener('click', fixScroll)
+ /*  fixScrollbar.addEventListener('click', fixScroll)
+  $(document).on('click', '#close_btn', function (e) {  console.log("click event");  $('.modal').removeClass('show')
+}) */

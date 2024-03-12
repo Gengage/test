@@ -189,7 +189,7 @@ footer{
   }
  
   .modal{
-
+    border:1px solid red;
     position:absolute;
     display:none;
     justify-content: center;
@@ -200,3 +200,41 @@ footer{
     background-color: black;
     
   }
+  .close_btn
+  {        
+  font-size: 40px;        
+  color: white;    
+  font-weight: bold;      
+  cursor: pointer;     
+  border:1px solid red;
+  position: absolute;
+  left:97%;
+  
+ }
+
+ /* 크레딧 파트 */
+.credits
+{
+  
+  left:35%;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:500px;
+  border:1px solid red;
+  height:500px;
+}
+.posi
+{
+  left:35%;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:500px;
+  border:1px solid purple;
+  height:500px;
+  
+  
+}
