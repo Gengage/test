@@ -17,3 +17,11 @@ document.querySelector(".navLastseason").addEventListener("click", (e) =>
 {
     document.querySelector(".lastSeason").scrollIntoView({ behavior: "smooth" })
 })
+document.querySelector(".open-modal").addEventListener("click",(e) => 
+{
+    modal.getElementsByClassName.display = ""
+})
+document.querySelector(".open-modal").addEventListener("click", (e) => 
+{
+    modal.getElementsByClassName(".wrap").display = ""
+})
