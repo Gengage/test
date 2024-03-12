@@ -17,11 +17,16 @@ document.querySelector(".navLastseason").addEventListener("click", (e) =>
 {
     document.querySelector(".lastSeason").scrollIntoView({ behavior: "smooth" })
 })
-document.querySelector(".open-modal").addEventListener("click",(e) => 
-{
-    modal.getElementsByClassName.display = ""
+
+const modal = document.querySelector('.modal')
+const btnOpenModal=document.querySelector('.wrap')
+console.log(modal)
+
+btnOpenModal.addEventListener("click", ()=>{
+    modal.style.display="flex"
 })
-document.querySelector(".open-modal").addEventListener("click", (e) => 
-{
-    modal.getElementsByClassName(".wrap").display = ""
-})
+const fixScrollbar = document.querySelector('.wrap')
+function fixScroll(){
+    document.body.style.overflow = "hidden"
+  }
+  fixScrollbar.addEventListener('click', fixScroll)
