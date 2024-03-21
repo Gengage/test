@@ -24,11 +24,13 @@ const btnOpenModal=document.querySelector('.wrap')
 
 
 btnOpenModal.addEventListener("click", ()=>{
+  document.body.classList.add("stop-scroll");
     modal.style.display="flex"
 })
 // 모달 바깥 영역 클릭 시 모달 닫기
 window.addEventListener('click', (e) => {
   if (e.target === modal) {
+    document.body.classList.remove("stop-scroll");
       modal.style.display = 'none'
   }
 })
