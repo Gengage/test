@@ -19,9 +19,9 @@ iframe
 	grid-template-rows: 1fr 30px;
 }
 header {
-    /* background-color: rgba(155,155,155,.1);
-    backdrop-filter: blur(5px); */
-    /* border:1px solid blue; */
+    background-color: rgba(155,155,155,.1);
+    backdrop-filter: blur(5px);
+   /*  border:1px solid blue; */
 	width: 100%;
 	height: 5vh;
 	position: fixed;
@@ -34,6 +34,7 @@ header {
 	top: 0;  left:0; right:0;
 	z-index: 1;
 }
+
 span
 {
     background-color: gray;
@@ -148,71 +149,50 @@ footer{
     cursor: pointer;
     z-index: 3;
   }
-  .modal_body{
-    position:absolute;
-    top:210vh; 
-    
-    width:100%;  
-    height:100%; 
-    margin:10px;
-    text-align: center;
-    background-color: black;
-    box-shadow: 10px;
-    transform:translateY(-50%);
-  }
-  .modal_body p:nth-child(1)
-  {
-    
-    font-weight: bold;
-    left : 630px;
-    position: absolute;
-    display:flex;
-    color:white;
-   /*  border:1px solid red; */
-  }
-  .modal_body p:nth-child(2)
-  {
-    font-weight: bold;
-    left : 700px;
-    top : 89%;
-    position: absolute;
-    display:flex;
-    color:white;
-   /*  border:1px solid red; */
-  }
-  .modal_body img
-  {
-    position: absolute;
-    left:0;
-    margin:10px;
-    width:600px;
-    height:97%;
-  }
- 
   .modal{
     /* border:1px solid red; */
     position:absolute;
     display:none;
     justify-content: center;
-    top:0;
-    left:0;
+    text-align: center;
+    top:160vh; 
+    height:100vh; 
     width:100%;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 10px; 
+  }
+  .modal p:nth-child(1)
+  {
+    
+    font-weight: bold;
+    left : 1230px;
+    position: absolute;
+    display:flex;
+    color:black;
+   /*  border:1px solid red; */
+  }
+  .modal p:nth-child(2)
+  {
+    font-weight: bold;
+    left : 1300px;
+    top : 89%;
+    position: absolute;
+    display:flex;
+    color:black;
+   /*  border:1px solid red; */
+  }
+  .modal img
+  {
+    position: absolute;
+    left:600px;
+    margin:10px;
+    width:600px;
     height:100%;
-    background-color: black;
     
   }
-.modal_body .close-btn
-  {        
-  font-size: 50px;        
-  color: white;    
-  font-weight: bold;      
-  cursor: pointer;     
-  border:1px solid red;
-  position: absolute;
-  left:57%;
-  z-index: 5;
-  
- }
+
+
 
  /* 크레딧 파트 */
  #slider {
